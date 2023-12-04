@@ -1,3 +1,4 @@
+import React from "react";
 const ProductSortOrder = ({ onSortChange, onOrderChange }) => {
   return (
     <div className="product-sortOrder">
@@ -17,10 +18,10 @@ const ProductSortOrder = ({ onSortChange, onOrderChange }) => {
       </div>
       <div className="labelSelect">
         <label htmlFor="productOrder" className="label">Order</label>
-      <select id="productOrder" name="productOrder" className="select" onChange={onOrderChange}>
-        <option value="ASC">⬆️ Ascending</option>
-        <option value="DESC">⬇️ Descending</option>
-      </select>
+        <select id="productOrder" name="productOrder" className="select" onChange={onOrderChange}>
+          <option value="ASC">⬆️ Ascending</option>
+          <option value="DESC">⬇️ Descending</option>
+        </select>
       </div>
     </div>
   );

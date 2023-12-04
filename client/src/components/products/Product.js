@@ -10,7 +10,7 @@ const Product = ({
   return (
     <li className="product">
       <div className="card">
-        <div>
+        <div className="imageDiscount">
           {product_image ? (
             <img
               src={`./img/${product_image}`}
@@ -27,8 +27,7 @@ const Product = ({
           {discount_amount && (
             <DiscountBadge
               className="badge"
-              discountValue={discount_amount
-              }
+              discount_amount={discount_amount}
             />
           )}
         </div>

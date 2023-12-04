@@ -8,10 +8,8 @@ describe("Product", () => {
         name="Test name"
         description="Test description"
         price="$10.00"
-        imageName="test.jpg"
-        imageDescription="Test image"
-        discountType="fixed amount off"
-        discountValue={10}
+        product_image="test.jpg"
+        discount_amount={10}
       />
     );
     expect(screen.getByRole("heading", { level: 3 })).toHaveTextContent(
@@ -35,10 +33,8 @@ describe("Product", () => {
         name="Test name"
         description="Test description"
         price="$10.00"
-        imageName={null}
-        imageDescription="Test image"
-        discountType={null}
-        discountValue={null}
+        product_image={null}
+        discount_amount={null}
       />
     );
     expect(screen.getByAltText("Default product dog")).toBeInTheDocument();
@@ -50,10 +46,8 @@ describe("Product", () => {
         name="Test name"
         description="Test description"
         price="$10.00"
-        imageName="test.jpg"
-        imageDescription="Test image"
-        discountType={null}
-        discountValue={null}
+        product_image="test.jpg"
+        discount_amount={null}
       />
     );
     expect(screen.queryByTestId("badge")).toBeNull();

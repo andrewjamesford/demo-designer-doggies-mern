@@ -1,3 +1,4 @@
+import React from "react";
 const NotFoundPage = () => {
   return (
     <main className="narrow-layout main-content section-padding page-padding">
