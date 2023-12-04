@@ -1,12 +1,13 @@
 import React from "react";
 const DiscountBadge = ({ discount_amount, className }) => {
-  const discountAmount = discount_amount || 0;
-  console.log(discountAmount);
+  console.log("discount_amount", discount_amount);
+
   return (
     <div
       className={`${className || ""} discountBadge`}
-      data-testid="badge">
-      {/* {discountAmount && <span>{discountAmount} % off</span>} */}
+      data-testid="badge"
+    >
+      {discount_amount && <>{discount_amount} % off</>}
     </div>
   );
 };

@@ -24,12 +24,12 @@ const Product = ({
               className="product-image"
             />
           )}
-          {discount_amount && (
+          {discount_amount ? (
             <DiscountBadge
               className="badge"
               discount_amount={discount_amount}
             />
-          )}
+          ) : <></>}
         </div>
         <h3>{name}</h3>
         <p>Price {price}</p>
