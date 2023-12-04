@@ -68,20 +68,14 @@ components:
                     type: string
                 price:
                     type: string
-                categoryName:
+                product_category:
                     type: string
                     nullable: true
-                imageName:
+                product_image:
                     type: string
                     nullable: true
-                imageDescription:
-                    type: string
-                    nullable: true
-                discountValue:
+                discount_amount:
                     type: number
-                    nullable: true
-                discountType:
-                    type: string
                     nullable: true
             required:
                 - id
