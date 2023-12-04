@@ -1,5 +1,5 @@
+import React from "react";
 import Product from "./Product";
-
 const ProductList = ({ products, className }) => {
   return (
     <ul className={className}>
@@ -9,7 +9,7 @@ const ProductList = ({ products, className }) => {
           name={product.name}
           description={product.description}
           price={product.price}
-          imageName={product.imageName}
+          product_image={product.product_image}
           imageDescription={product.imageDescription}
           discountValue={product.discountValue}
           discountType={product.discountType}

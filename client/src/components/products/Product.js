@@ -1,22 +1,20 @@
+import React from "react";
 import DiscountBadge from "./DiscountBadge";
-
 const Product = ({
   name,
   description,
   price,
-  imageName,
-  imageDescription,
-  discountType,
-  discountValue,
+  product_image,
+  discount_amount,
 }) => {
   return (
     <li className="product">
       <div className="card">
         <div>
-          {imageName ? (
+          {product_image ? (
             <img
-              src={`./img/${imageName}`}
-              alt={imageDescription}
+              src={`./img/${product_image}`}
+              alt={name}
               className="product-image"
             />
           ) : (
@@ -26,11 +24,11 @@ const Product = ({
               className="product-image"
             />
           )}
-          {discountValue && discountType && (
+          {discount_amount && (
             <DiscountBadge
               className="badge"
-              discountValue={discountValue}
-              discountType={discountType}
+              discountValue={discount_amount
+              }
             />
           )}
         </div>

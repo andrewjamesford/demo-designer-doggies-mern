@@ -3,22 +3,22 @@ const productSchema = require("./product.models");
 module.exports = {
   getProducts: async (sortOrder, direction) => {
     try {
-      let sortOrderParam = "name";
+      let sortDirection = 1;
+      if (direction.toLowerCase() === "desc") {
+        sortDirection = -1;
+      }
+
+      let sortOrderParam = { name: sortDirection };
 
       if (sortOrder.toLowerCase() === "description") {
-        sortOrderParam = "description";
+        sortOrderParam = { description: sortDirection };
       }
       if (sortOrder.toLowerCase() === "price") {
-        sortOrderParam = "price -test";
+        sortOrderParam = { price: sortDirection };
       }
       if (sortOrder.toLowerCase() === "discountAmount") {
-        sortOrderParam = "discount_amount";
+        sortOrderParam = { discount_amount: sortDirection };
       }
-
-      if (direction.toLowerCase() === "desc") {
-        sortOrderParam = sortOrderParam + " desc";
-      }
-      // const result = await productSchema.find();
 
       const result = await productSchema.find().sort(sortOrderParam).exec();
       return result;

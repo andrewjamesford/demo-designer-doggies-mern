@@ -20,19 +20,6 @@ const Header = () => {
                 Products
               </NavLink>
             </li>
-            <li className="rightLinkItems">
-              <NavLink
-                to="/dashboard"
-                className={({ isActive }) =>
-                  isActive ? `link activeLink` : `link`
-                }
-              >
-                Dashboard
-              </NavLink>
-            </li>
-            <li className={`navButton rightLinkItems`}>
-              <LoginButton />
-            </li>
           </ul>
         </nav>
       </header>
