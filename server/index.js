@@ -2,7 +2,9 @@ const app = require("./app");
 const port = process.env.PORT || 5001;
 const mongoose = require("mongoose");
 
-const mongoDbUri = process.env.MONGO_URI || "mongodb://localhost:27017/mongo";
+const mongoDbUri = process.env.MONGO_URI || "mongodb://localhost:27017/designer-doggies";
+console.log("mongoDbUri - ", mongoDbUri);
+
 mongoose.connect(mongoDbUri, {
     useNewUrlParser: true,
     serverSelectionTimeoutMS: 5000,
