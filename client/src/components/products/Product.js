@@ -5,7 +5,7 @@ const Product = ({
     description,
     price,
     product_image,
-    discount_amount,
+    discount_amount
 }) => {
     return (
         <li className="product">

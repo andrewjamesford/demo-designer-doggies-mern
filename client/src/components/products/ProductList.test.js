@@ -16,7 +16,7 @@ describe("ProductList", () => {
                 imageName: "dog-photo_0000.jpg",
                 imageDescription: "Wings harness",
                 discountValue: null,
-                discountType: null,
+                discountType: null
             },
             {
                 id: 2,
@@ -28,8 +28,8 @@ describe("ProductList", () => {
                 imageName: "dog-photo_0001.jpg",
                 imageDescription: "Deluxe Carry Bag Orange",
                 discountValue: 1,
-                discountType: "fixed amount off",
-            },
+                discountType: "fixed amount off"
+            }
         ];
         render(<ProductList products={products} />);
         expect(screen.getAllByRole("listitem").length).toBe(2);
@@ -52,8 +52,8 @@ describe("ProductList", () => {
                 imageName: "dog-photo_0000.jpg",
                 imageDescription: "Wings harness",
                 discountValue: null,
-                discountType: null,
-            },
+                discountType: null
+            }
         ];
         render(<ProductList products={products} />);
         expect(screen.getAllByRole("listitem").length).toBe(1);

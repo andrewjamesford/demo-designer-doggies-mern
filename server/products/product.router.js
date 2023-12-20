@@ -6,7 +6,7 @@ const productRepository = require("./product.repository");
 
 const queryParamsSchema = Joi.object().keys({
     sortOrder: Joi.string().allow(null, ""),
-    direction: Joi.string().allow(null, ""),
+    direction: Joi.string().allow(null, "")
 });
 
 router.get(
@@ -22,7 +22,7 @@ router.get(
             );
 
             const responseResults = {
-                products,
+                products
             };
 
             return res.json(responseResults);

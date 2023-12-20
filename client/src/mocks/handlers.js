@@ -13,13 +13,13 @@ const productsPageOneMock = {
             imageName: "dog-photo_0000.jpg",
             imageDescription: "Wings harness",
             discountValue: null,
-            discountType: null,
-        },
+            discountType: null
+        }
     ],
     currentPage: 1,
     totalPages: 2,
     itemsPerPage: 1,
-    totalItems: 2,
+    totalItems: 2
 };
 
 const productsPageTwoMock = {
@@ -34,16 +34,17 @@ const productsPageTwoMock = {
             imageName: "dog-photo_0001.jpg",
             imageDescription: "Deluxe Carry Bag Orange",
             discountValue: 1,
-            discountType: "fixed amount off",
-        },
+            discountType: "fixed amount off"
+        }
     ],
     currentPage: 2,
     totalPages: 2,
     itemsPerPage: 1,
-    totalItems: 2,
+    totalItems: 2
 };
 
 export const handlers = [
+    // eslint-disable-next-line no-undef
     rest.get(`${process.env.REACT_APP_API_URL}/products`, (req, res, ctx) => {
         const query = req.url.searchParams;
         const limit = query.get("limit");
@@ -53,5 +54,5 @@ export const handlers = [
         } else {
             return res(ctx.json(productsPageTwoMock));
         }
-    }),
+    })
 ];

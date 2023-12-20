@@ -16,7 +16,7 @@ describe("ProductSortOrder", () => {
         userEvent.selectOptions(
             screen.getByRole("combobox", { name: "Sort" }),
             screen.getByRole("option", {
-                name: "Description",
+                name: "Description"
             })
         );
         expect(changeSort).toHaveBeenCalled();
@@ -35,7 +35,7 @@ describe("ProductSortOrder", () => {
         userEvent.selectOptions(
             screen.getByRole("combobox", { name: "Order" }),
             screen.getByRole("option", {
-                name: "⬆️ Ascending",
+                name: "⬆️ Ascending"
             })
         );
         expect(changeOrder).toHaveBeenCalled();
