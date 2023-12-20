@@ -34,7 +34,7 @@ const Product = ({
                     )}
                 </div>
                 <h3>{name}</h3>
-                <p>Price {price}</p>
+                <p>Price ${price}</p>
                 <p
                     data-testid="product-description"
                     className="product-description"
