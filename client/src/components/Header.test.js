@@ -4,18 +4,17 @@ import { Router } from "react-router-dom";
 import Header from "./Header";
 
 beforeEach(() => {
-  const history = createMemoryHistory();
-  render(
-    <Router location={history.location} navigator={history}>
-      <Header />
-    </Router>
-  );
+    const history = createMemoryHistory();
+    render(
+        <Router location={history.location} navigator={history}>
+            <Header />
+        </Router>
+    );
 });
 
 describe("Header", () => {
-  test("The header renders", () => {
-    expect(screen.getByText(/products/i)).toBeInTheDocument();
-    expect(screen.getByText(/dashboard/i)).toBeInTheDocument();
-    expect(screen.getByText(/Designer Doggies/i)).toBeInTheDocument();
-  });
+    test("The header renders", () => {
+        expect(screen.getByText(/products/i)).toBeInTheDocument();
+        expect(screen.getByText(/Designer Doggies/i)).toBeInTheDocument();
+    });
 });

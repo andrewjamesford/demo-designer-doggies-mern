@@ -6,16 +6,16 @@ import NotFoundPage from "./components/NotFoundPage";
 import Footer from "./components/Footer";
 
 const App = () => {
-  return (
-    <div className="app">
-      <Header />
-      <Routes>
-        <Route exact path="/" element={<ProductPage />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
-      <Footer />
-    </div>
-  );
+    return (
+        <div className="app">
+            <Header />
+            <Routes>
+                <Route exact path="/" element={<ProductPage />} />
+                <Route path="*" element={<NotFoundPage />} />
+            </Routes>
+            <Footer />
+        </div>
+    );
 };
 
 export default App;
