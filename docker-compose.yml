@@ -26,12 +26,28 @@ services:
       - /app/node_modules
     restart: on-failure
   db:
-    image: mongo
+    image: mongo:latest
     expose:
       - 27017
     volumes:
       - db-volume:/data/db
     ports:
       - "27017:27017"
+    networks:
+      - "designerdoggies_net"
+  data:
+    env_file:
+      - .env
+    build:
+      context: ./data
+      dockerfile: Dockerfile
+      args:
+        - DATABASE_URI=$DATABASE_URI
+        - USERNAME=$MONGO_INITDB_ROOT_USERNAME
+        - PASSWORD=$MONGO_INITDB_ROOT_PASSWORD
+    depends_on:
+      - db
+    networks:
+      - "designerdoggies_net"
 volumes:
   db-volume:
