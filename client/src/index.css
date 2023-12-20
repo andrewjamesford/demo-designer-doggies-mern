@@ -1,215 +1,219 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 .main-content {
-  flex-grow: 2;
+    flex-grow: 2;
 }
 .main-layout {
-  padding: 0 3rem;
-  max-width: 75rem;
-  margin: 0 auto;
+    padding: 0 3rem;
+    max-width: 75rem;
+    margin: 0 auto;
 }
 .narrow-layout > * {
-  max-width: 627px;
+    max-width: 627px;
 }
 .main-layout > *,
 .narrow-layout > * {
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .page-padding {
-  padding-left: 1rem;
-  padding-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .section-padding {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .grid {
-  display: grid;
-  list-style: none;
-  padding-left: 0;
+    display: grid;
+    list-style: none;
+    padding-left: 0;
 }
 
 .app {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
 }
 .app > * {
-  flex-shrink: 0;
+    flex-shrink: 0;
 }
 .errorMessage {
-  padding: 0.5rem;
-  color: #ffffff;
-  background-color: #a60e0e;
+    padding: 0.5rem;
+    color: #ffffff;
+    background-color: #a60e0e;
 }
 .footer {
-  width: 100%;
-  align-self: flex-end;
-  background-color: #eeeeee;
-  display: flex;
+    width: 100%;
+    align-self: flex-end;
+    background-color: #eeeeee;
+    display: flex;
 }
 .footerItem {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin: 0;
 
-  color: black;
+    color: black;
 }
 .nav {
-  width: 100%;
-  background-color: #eeeeee;
-  display: flex;
-  justify-content: space-between;
+    width: 100%;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: space-between;
 }
 .navButton {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 .menu {
-  display: flex;
+    display: flex;
 }
 .rightLinks {
-  display: flex;
+    display: flex;
 }
 .rightLinkItems {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 .link {
-  color: black;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+    color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 .activeLink {
-  color: #a60e0e;
+    color: #a60e0e;
 }
 
 .header {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
 }
 .header .logo {
-  font-size: 3rem;
-  margin: 2rem 0rem;
+    font-size: 3rem;
+    margin: 2rem 0rem;
 }
 .product {
-  position: relative;
-  margin-bottom: 3rem;
+    position: relative;
+    margin-bottom: 3rem;
 }
 .product-description {
-  min-height: 2.5rem;
+    min-height: 2.5rem;
 }
 .badge {
-  position: absolute;
-  top: 0;
-  left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .button {
-  background-color: black;
-  color: white;
-  border-radius: 0.25rem;
-  border: none;
-  padding: 0.5rem;
-  font-weight: 800;
+    background-color: black;
+    color: white;
+    border-radius: 0.25rem;
+    border: none;
+    padding: 0.5rem;
+    font-weight: 800;
 }
 .container {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .controls {
-  width: 100%;
-  max-width: 200px;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    width: 100%;
+    max-width: 200px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .discountBadge {
-  padding: 0.5rem;
+    padding: 0.5rem;
+    color: #ffffff;
+    text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000,
+        1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
+    font-weight: 800;
 }
 .container {
-  width: auto;
-  overflow: scroll;
+    width: auto;
+    overflow: scroll;
 }
 
 .table {
-  color: #333333;
-  background: #ffffff;
-  border: 1px solid grey;
-  border-collapse: collapse;
-  width: 100%;
+    color: #333333;
+    background: #ffffff;
+    border: 1px solid grey;
+    border-collapse: collapse;
+    width: 100%;
 }
 .tableCell {
-  padding: 0.5em;
-  border: 1px solid lightgrey;
+    padding: 0.5em;
+    border: 1px solid lightgrey;
 }
 .tableHeaderCell {
-  padding: 0.5em;
-  border: 1px solid lightgrey;
-  color: #000000;
-  background: rgba(0, 0, 0, 0.1);
+    padding: 0.5em;
+    border: 1px solid lightgrey;
+    color: #000000;
+    background: rgba(0, 0, 0, 0.1);
 }
 .product-image {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 .product-sortOrder {
-  display: grid;
-  gap: 1rem;
+    display: grid;
+    gap: 1rem;
 }
 .select {
-  padding: 0.5rem;
+    padding: 0.5rem;
 }
 .labelSelect {
-  display: grid;
-  gap: 0.5rem;
+    display: grid;
+    gap: 0.5rem;
 }
 
 @media only screen and (min-width: 35rem) {
-  .half-width {
-    max-width: 672px;
-  }
-  .grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
-  .product-sortOrder {
-    grid-template-columns: 1fr 1fr;
-  }
+    .half-width {
+        max-width: 672px;
+    }
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .product-sortOrder {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 @media only screen and (min-width: 64rem) {
-  .grid {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1.5rem;
-  }
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5rem;
+    }
 }
 .left-align {
-  text-align: left;
+    text-align: left;
 }
 .right-align {
-  text-align: right;
+    text-align: right;
 }
